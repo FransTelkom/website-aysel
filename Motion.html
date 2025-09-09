@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Metaverse Gallery </title>
+    <link rel="stylesheet" href="Motion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <video autoplay muted loop id="bg-video">
+        <source src="Videos/JokerPersona5Royal.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <header class="top-nav">
+        <div class="logo">
+            <img src="Images/Persona5Royal.png" alt="Persona 5 Royal">
+        </div>
+
+        <nav id="nav-links">
+            <ul>
+                <li><a href="#Home"> Home </a></li>
+                <li><a href="#AboutMe"> About Me </a></li>
+                <li><a href="#Portfolio"> Portfolio </a></li>
+                <li><a href="#Contact"> Contact </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        
+        <section id="Home" class="phantom">
+            <div class="phantom-content">
+                <h1> Metaverse Gallery </h1>
+                <p> Welcome to my Metaverse Gallery — a personal portfolio showcasing selected works across design, development, and creative storytelling. Inspired by the cognitive world, this gallery reveals the essence of my creative journey. </p>
+            </div>
+            <div class="phantom-visual">
+                <img src="Images/Ren_Amamiya.png" alt="Phantom Thief">
+            </div>
+        </section>
+
+        <section id="AboutMe" class="section">
+            <div class="about-card">
+                <div class="profile-img">
+                    <img src="Images/Profile_Picture1.jpg" alt="Profile Picture">
+                </div>
+                <h2 class="about-title"> About Me </h2>
+                <p class="about-text"> The name's <strong>Aysel Fikri Nabil</strong> — a designer by heart, a coder by rebellion.<br><br>
+                Born and raised in the digital alleys of <strong>SMK Telkom Jakarta</strong>, I specialized in <strong>Software Engineering (RPL)</strong>, where I discovered my true Persona: the perfect blend between aesthetic design and structured code.<br><br>
+                My current focus lies in <strong>Graphic Design</strong> and <strong>Front-End Web Development</strong>. I believe every visual should tell a story, and every interaction should feel like a well-planned heist — smooth, bold, and unforgettable.<br><br>
+                Welcome to my portfolio — this is my Palace of Creation. </p>
+            </div>
+        </section>
+
+        <section id="Portfolio" class="section">
+            <h2> My Heists (Portfolio) </h2>
+            <div class="cards">
+                <div class="card" onclick="openLightbox('Images/Website_Testing1.png', '1st Project', 'Website Developer')">
+                    <div class="card-image">
+                        <img src="Images/Website_Testing1.png" alt="Portfolio Image">
+                    </div>
+                    <h3> 1st Project </h3>
+                    <p> Website Developer </p>
+                </div>
+
+                <div class="card" onclick="openLightbox('Images/Website_Testing2.png', '2nd Project', 'Website Developer')">
+                    <div class="card-image">
+                        <img src="Images/Website_Testing2.png" alt="Portfolio Image">
+                    </div>
+                    <h3> 2nd Project </h3>
+                    <p> Website Developer </p>
+                </div>
+
+                <div class="card" onclick="openLightbox('Images/Website_Testing3.png', '3rd Project', 'Website Developer')">
+                    <div class="card-image">
+                        <img src="Images/Website_Testing3.png" alt="Portfolio Image">
+                    </div>
+                    <h3> 3rd Project </h3>
+                    <p> Website Developer </p>
+                </div>
+
+                <div class="card" onclick="openLightbox('Images/Michael_Jackson.jpg', '4th Project', 'Graphic Design')">
+                    <div class="card-image">
+                        <img src="Images/Welcome_To_O2H.jpg" alt="Portfolio Image">
+                    </div>
+                    <h3> 4th Project </h3>
+                    <p> Graphic Design </p>
+                </div>
+
+                <div class="card" onclick="openLightbox('Images/Michael_Jackson.jpg', '5th Project', 'Graphic Design')">
+                    <div class="card-image">
+                        <img src="Images/Takanashi_Hoshino.jpg" alt="Portfolio Image">
+                    </div>
+                    <h3> 5th Project </h3>
+                    <p> Graphic Design </p>
+                </div>
+
+                <div class="card" onclick="openLightbox('Images/Michael_Jackson.jpg', '6th Project', 'Graphic Design')">
+                    <div class="card-image">
+                        <img src="Images/Michael_Jackson.jpg" alt="Portfolio Image">
+                    </div>
+                    <h3> 6th Project </h3>
+                    <p> Graphic Design </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="Contact" class="contact">
+            <h2> Contact Me </h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit"> Send </button>
+            </form>
+        </section>
+
+        <footer>
+            <p> © 2025 Metaverse Gallery </p>
+        </footer>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-img" src="" alt="Lightbox Image">
+            <h3 id="lightbox-title"></h3>
+            <p id="lightbox-desc"></p>
+        </div>
+    </div>
+
+    <script src="MotionJS.js"></script>
+    
+</body>
+</html>
